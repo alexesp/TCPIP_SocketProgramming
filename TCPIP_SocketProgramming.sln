@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TCPIP_SocketProgramming", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketServerStart", "SocketServerStart\SocketServerStart.csproj", "{2DA2AC4C-A8A5-471E-A845-56C53CF3BEC1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SocketClientStart", "SocketClientStart\SocketClientStart.csproj", "{B4AB7BEA-0411-45C2-81C3-D0F88A225A80}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{2DA2AC4C-A8A5-471E-A845-56C53CF3BEC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2DA2AC4C-A8A5-471E-A845-56C53CF3BEC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2DA2AC4C-A8A5-471E-A845-56C53CF3BEC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4AB7BEA-0411-45C2-81C3-D0F88A225A80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4AB7BEA-0411-45C2-81C3-D0F88A225A80}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4AB7BEA-0411-45C2-81C3-D0F88A225A80}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4AB7BEA-0411-45C2-81C3-D0F88A225A80}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
