@@ -44,7 +44,7 @@
             // btnAcceptIncomingAsyncConn
             // 
             this.btnAcceptIncomingAsyncConn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAcceptIncomingAsyncConn.Location = new System.Drawing.Point(27, 371);
+            this.btnAcceptIncomingAsyncConn.Location = new System.Drawing.Point(214, 371);
             this.btnAcceptIncomingAsyncConn.Name = "btnAcceptIncomingAsyncConn";
             this.btnAcceptIncomingAsyncConn.Size = new System.Drawing.Size(317, 67);
             this.btnAcceptIncomingAsyncConn.TabIndex = 1;
