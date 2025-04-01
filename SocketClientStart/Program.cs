@@ -39,7 +39,7 @@ try
         return;
     }
 
-    Console.WriteLine(string.Format("IPAddress: {0} - Port: {1}", iPAddress.ToString(), nPortInput.ToString()));
+    Console.WriteLine(string.Format("IPAddress: {0} - Port: {1}", iPAddress.ToString(), nPortInput));
 
     client.Connect(iPAddress, nPortInput);
 
