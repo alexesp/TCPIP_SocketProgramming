@@ -24,5 +24,10 @@ namespace AsyncSocketServer
         {
             mServer.StartListeningForIncomingConnection();
         }
+
+        private void send_all_btn_Click(object sender, EventArgs e)
+        {
+            mServer.SendToAll(message_textBox1.Text.Trim());
+        }
     }
 }
