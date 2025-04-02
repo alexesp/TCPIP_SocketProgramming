@@ -135,5 +135,27 @@ namespace BibliotecaSocketAsync
                 Debug.WriteLine(ex.ToString());
             }
         }
+
+        public void StopServer()
+        {
+            try
+            {
+                if (mTCPListener != null)
+                {
+                    mTCPListener.Stop();
+                }
+                foreach (TcpClient paramClient in mClients)
+                {
+                    paramClient.Close();
+                }
+
+                mClients.Clear();
+            }
+            catch (Exception ex)
+            {
+
+                Debug.WriteLine(ex.ToString());
+            }
+        }
     }
 }

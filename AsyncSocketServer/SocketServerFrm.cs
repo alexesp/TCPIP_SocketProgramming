@@ -29,5 +29,15 @@ namespace AsyncSocketServer
         {
             mServer.SendToAll(message_textBox1.Text.Trim());
         }
+
+        private void stop_server_button2_Click(object sender, EventArgs e)
+        {
+            mServer.StopServer();
+        }
+
+        private void SocketServerFrm_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            mServer.StopServer();
+        }
     }
 }

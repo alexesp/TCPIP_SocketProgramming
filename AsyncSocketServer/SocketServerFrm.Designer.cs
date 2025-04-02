@@ -33,6 +33,7 @@
             this.send_all_btn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.message_textBox1 = new System.Windows.Forms.TextBox();
+            this.stop_server_button2 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // button1
@@ -58,9 +59,9 @@
             // send_all_btn
             // 
             this.send_all_btn.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.send_all_btn.Location = new System.Drawing.Point(363, 371);
+            this.send_all_btn.Location = new System.Drawing.Point(596, 371);
             this.send_all_btn.Name = "send_all_btn";
-            this.send_all_btn.Size = new System.Drawing.Size(311, 67);
+            this.send_all_btn.Size = new System.Drawing.Size(156, 67);
             this.send_all_btn.TabIndex = 2;
             this.send_all_btn.Text = "Send All";
             this.send_all_btn.UseVisualStyleBackColor = true;
@@ -71,7 +72,7 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(758, 397);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 20);
+            this.label1.Size = new System.Drawing.Size(67, 16);
             this.label1.TabIndex = 3;
             this.label1.Text = "Message:";
             // 
@@ -83,11 +84,22 @@
             this.message_textBox1.TabIndex = 4;
             this.message_textBox1.Text = "Message from client";
             // 
+            // stop_server_button2
+            // 
+            this.stop_server_button2.Location = new System.Drawing.Point(353, 371);
+            this.stop_server_button2.Name = "stop_server_button2";
+            this.stop_server_button2.Size = new System.Drawing.Size(185, 67);
+            this.stop_server_button2.TabIndex = 5;
+            this.stop_server_button2.Text = "Stop Server";
+            this.stop_server_button2.UseVisualStyleBackColor = true;
+            this.stop_server_button2.Click += new System.EventHandler(this.stop_server_button2_Click);
+            // 
             // SocketServerFrm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1257, 450);
+            this.Controls.Add(this.stop_server_button2);
             this.Controls.Add(this.message_textBox1);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.send_all_btn);
@@ -97,6 +109,7 @@
             this.Name = "SocketServerFrm";
             this.ShowIcon = false;
             this.Text = "Socket Server";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.SocketServerFrm_FormClosing);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -109,6 +122,7 @@
         private System.Windows.Forms.Button send_all_btn;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox message_textBox1;
+        private System.Windows.Forms.Button stop_server_button2;
     }
 }
 
