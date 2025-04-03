@@ -83,6 +83,8 @@ namespace AsyncSocketClient
                await mClient.ConnectAsync(mServerIPAddress, mServerPort);
                 Console.WriteLine(string.Format("Connected to server IP/Port: {0} / {1}",
                     mServerIPAddress, mServerPort));
+
+                ReadDataAsync(mClient);
             }
             catch (Exception ex)
             {
@@ -91,5 +93,35 @@ namespace AsyncSocketClient
             }
         }
 
+        private async Task ReadDataAsync(TcpClient mClient)
+        {
+            try
+            {
+                StreamReader clientStreamReader = new StreamReader(mClient.GetStream());
+                char[] buff = new char[64];
+                int readByteCount = 0;
+
+                while (true)
+                {
+                   readByteCount = await clientStreamReader.ReadAsync(buff, 0, buff.Length);
+
+                    if(readByteCount <= 0)
+                    {
+                        Console.WriteLine("Disconnected from server.");
+                        mClient.Close();
+                        break;
+                    }
+
+                    Console.WriteLine(string.Format("Received bytes: {0} - Message: {1}", readByteCount, new string(buff)));
+
+                    Array.Clear(buff, 0, buff.Length);
+                }
+            }
+            catch (Exception ex)
+            {
+
+                Console.WriteLine(ex.ToString());
+            }
+        }
     }
 }
