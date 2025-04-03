@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncSocketServer", "AsyncS
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BibliotecaSocketAsync", "BibliotecaSocketAsync\BibliotecaSocketAsync.csproj", "{E508D34B-A648-4F09-9CE2-152B2DF5DE6F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AsyncSocketClient", "AsyncSocketClient\AsyncSocketClient.csproj", "{5D4D5EB0-D0E8-41A4-A670-4325071EDDFC}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{E508D34B-A648-4F09-9CE2-152B2DF5DE6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E508D34B-A648-4F09-9CE2-152B2DF5DE6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E508D34B-A648-4F09-9CE2-152B2DF5DE6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5D4D5EB0-D0E8-41A4-A670-4325071EDDFC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5D4D5EB0-D0E8-41A4-A670-4325071EDDFC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5D4D5EB0-D0E8-41A4-A670-4325071EDDFC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5D4D5EB0-D0E8-41A4-A670-4325071EDDFC}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
